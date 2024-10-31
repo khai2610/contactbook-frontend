@@ -85,6 +85,7 @@ export default {
     methods: {
         submitContact() {
             this.$emit("submit:contact", this.contactLocal);
+            this.$router.push({ path: '/'})
         },
         deleteContact() {
             this.$emit("delete:contact", this.contactLocal.id);
