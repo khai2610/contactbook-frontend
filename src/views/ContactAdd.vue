@@ -1,5 +1,5 @@
 <template>
-    <div class="page">
+    <div v-if="contact" class="page">
         <h4>Thêm Liên hệ</h4>
         <ContactForm :contact="contact" @submit:contact="createContact" />
         <p>{{ message }}</p>
